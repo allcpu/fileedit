@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-containerwords {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #ff8d1e;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+}
+.flex-containerthree {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: DodgerBlue;
+}
+.flex-containertwo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #9ef229;
+}
+.flex-containerone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f04ff0;
+}
+.flex-containerthree > div {
+  background-color: #f1f1f1;
+  width: fit-content;
+  margin: 10px;
+  color: #6028ed;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 10px;
+}
+.flex-containertwo > div {
+  background-color: #f1f1f1;
+  width: fit-content;
+  margin: 10px;
+  color: #6028ed;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+   padding: 10px;
+}
+.flex-containerone > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  color: #6028ed;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 10px;
+}
+.wordsdiv{
+min-width: 33px;
+}
+.key{
+ background-size: cover;
+ background-image: url('key.png');
+ height: 33px;
+ width: 33px;
+}
+.lock{
+ background-size: cover;
+ background-image: url('lock.png');
+ height: 33px;
+ width: 33px;
+}
+.cut{
+ background-size: cover;
+ background-image: url('cut.png');
+ height: 33px;
+ width: 33px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="flex-containerwords">
+
+<div class="grid-container">
+<input id="wr1" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,1)"></button>
+<button class="lock" onclick="do(2,1)"></button>
+<button class="cut" onclick="document.getElementById('wr1').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr2" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,2)"></button>
+<button class="lock" onclick="do(2,2)"></button>
+<button class="cut" onclick="document.getElementById('wr2').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr3" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,3)"></button>
+<button class="lock" onclick="do(2,3)"></button>
+<button class="cut" onclick="document.getElementById('wr3').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr4" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,4)"></button>
+<button class="lock" onclick="do(2,4)"></button>
+<button class="cut" onclick="document.getElementById('wr4').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr5" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,5)"></button>
+<button class="lock" onclick="do(2,5)"></button>
+<button class="cut" onclick="document.getElementById('wr5').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr6" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,6)"></button>
+<button class="lock" onclick="do(2,6)"></button>
+<button class="cut" onclick="document.getElementById('wr6').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr7" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,7)"></button>
+<button class="lock" onclick="do(2,7)"></button>
+<button class="cut" onclick="document.getElementById('wr7').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr8" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,8)"></button>
+<button class="lock" onclick="do(2,8)"></button>
+<button class="cut" onclick="document.getElementById('wr8').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr9" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,9)"></button>
+<button class="lock" onclick="do(2,9)"></button>
+<button class="cut" onclick="document.getElementById('wr9').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr10" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,10)"></button>
+<button class="lock" onclick="do(2,10)"></button>
+<button class="cut" onclick="document.getElementById('wr10').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr11" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,11)"></button>
+<button class="lock" onclick="do(2,11)"></button>
+<button class="cut" onclick="document.getElementById('wr11').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr12" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,12)"></button>
+<button class="lock" onclick="do(2,12)"></button>
+<button class="cut" onclick="document.getElementById('wr12').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr13" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,13)"></button>
+<button class="lock" onclick="do(2,13)"></button>
+<button class="cut" onclick="document.getElementById('wr13').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr14" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,14)"></button>
+<button class="lock" onclick="do(2,14)"></button>
+<button class="cut" onclick="document.getElementById('wr14').value = '';"></button>
+</div>
+<div class="grid-container">
+<input id="wr15" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,15)"></button>
+<button class="lock" onclick="do(2,15)"></button>
+<button class="cut" onclick="document.getElementById('wr15').value = '';"></button>
+</div>
+<div class="grid-container">
+<input id="wr16" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,16)"></button>
+<button class="lock" onclick="do(2,16)"></button>
+<button class="cut" onclick="document.getElementById('wr16').value = '';"></button>
+</div>
+<div class="grid-container">
+<input id="wr17" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,17)"></button>
+<button class="lock" onclick="do(2,17)"></button>
+<button class="cut" onclick="document.getElementById('wr17').value = '';"></button>
+</div>
+<div class="grid-container">
+<input id="wr18" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,18)"></button>
+<button class="lock" onclick="do(2,18)"></button>
+<button class="cut" onclick="document.getElementById('wr18').value = '';"></button>
+</div>
+<div class="grid-container">
+<input id="wr19" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,19)"></button>
+<button class="lock" onclick="do(2,19)"></button>
+<button class="cut" onclick="document.getElementById('wr19').value = '';"></button>
+</div>
+<div class="grid-container">
+<input id="wr20" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,20)"></button>
+<button class="lock" onclick="do(2,20)"></button>
+<button class="cut" onclick="document.getElementById('wr20').value = '';"></button>
+</div>
+</div>
+
+<script>
+
+var smm, rv1, tv1, cont1, cont2, rowrow, res, rem, classvar, div, drawn, divc, divw, t;
+var nsl = [];
+var psl = [];
+var row1 = [];
+var row2 = [];
+var row3 = [];
+var row4 = [];
+var row5 = [];
+var row6 = [];
+var row7 = [];
+var row8 = [];
+var row9 = [];
+var row10 = [];
+var row11 = [];
+var row12 = [];
+var row13 = [];
+var row14 = [];
+var row15 = [];
+var row16 = [];
+var row17 = [];
+var row18 = [];
+var row19 = [];
+var row20 = [];
+var x = 0;
+
+function start () {
+  x++;
+  var build = x;
+  var hand = ;
+  words.forEach(find);
+  setTimeout(finds, 3000);
+}
+
+function find(item, index) {
+	var leg = item.length;
+	if (hand == leg) {
+	if (built == 1) {
+	row1.push(item);
+    }else if (built == 2) {
+	row2.push(item);
+    }else if (built == 3) {
+	row3.push(item);
+    }else if (built == 4) {
+	row4.push(item);
+    }else if (built == 5) {
+	row5.push(item);
+    }else if (built == 6) {
+	row6.push(item);	
+    }else if (built == 7) {
+	row7.push(item);	
+	}else if (built == 8) {
+	row8.push(item);
+    }else if (built == 9) {
+	row9.push(item);
+    }else if (built == 10) {
+	row10.push(item);
+    }else if (built == 11) {
+	row11.push(item);
+    }else if (built == 12) {
+	row12.push(item);
+    }else if (built == 13) {
+	row13.push(item);
+    }else if (built == 14) {
+	row14.push(item);
+    }else if (built == 15) {
+	row15.push(item);
+    }else if (built == 16) {
+	row16.push(item);	
+    }else if (built == 17) {
+	row17.push(item);	
+	}else if (built == 18) {
+	row18.push(item);
+    }else if (built == 19) {
+	row19.push(item);
+    }else if (built == 20) {
+	row20.push(item);
+    }
+	}
+}
+
+function removase() {
+	row1 = [];
+	row2 = []; 
+	row3 = []; 
+	row4 = []; 
+	row5 = []; 
+	row6 = []; 
+	row7 = []; 
+	row8 = []; 
+	row9 = []; 
+	row10 = []; 
+	row11 = []; 
+	row12 = []; 
+	row13 = [];
+	row14 = [];
+	row15 = []; 
+	row16 = []; 
+	row17 = []; 
+	row18 = [];
+	row19 = []; 
+	row20 = [];
+}
+
+function rebot () {
+
+}
+
+function makase() {
+	smm = 0;
+	tv1 = 0;
+	rv1 = 0;
+	rowrow = [];
+	cont1 = psl.length;
+	if (row == 1) {
+	 psl = row1;
+	 cont1 = 0;
+    }else if (row == 2) {
+		cont2 = row2.length;
+		rowrow = row2;
+    }else if (row == 3) {
+		cont2 = row3.length;
+		rowrow = row3;
+    }else if (row == 4) {
+		cont2 = row4.length;
+        rowrow = row4;
+    }else if (row == 5) {
+		cont2 = row5.length;
+		rowrow = row5;
+    }else if (row == 6) {
+		cont2 = row6.length;
+		rowrow = row6;
+    }else if (row == 7) {
+		cont2 = row7.length;
+		rowrow = row7;
+    }else if (row == 8) {
+		cont2 = row8.length;
+		rowrow = row8;
+    }else if (row == 9) {
+		cont2 = row9.length;
+		rowrow = row9;
+    }else if (row == 10) {
+		cont2 = row10.length;
+		rowrow = row10;
+    }else if (row == 11) {
+		cont2 = row11.length;
+		rowrow = row11;
+    }else if (row == 12) {
+		cont2 = row1o2.length;
+		rowrow = row12;
+    }else if (row == 13) {
+		cont2 = row1o3.length;
+		rowrow = row13;
+    }else if (row == 14) {
+		cont2 = row14.length;
+		rowrow = row14;
+    }else if (row == 15) {
+		cont2 = row15.length;
+		rowrow = row15;
+    }else if (row == 16) {
+		cont2 = row16.length;
+		rowrow = row16;
+    }else if (row == 17) {
+		cont2 = row17.length;
+		rowrow = row17;
+    }else if (row == 18) {
+		cont2 = row18.length;
+		rowrow = row18;
+    }else if (row == 19) {
+		cont2 = row19.length;
+		rowrow = row19;
+    }else if (row == 20) {
+		cont2 = row20.length;
+		rowrow = row20;
+    }
+	while(rv1<cont1) {
+	while(tv1<=cont2) {
+		nsl[smm] = psl[rv1] + "ppp" + rowrow[tv1];
+	tv1++;
+	smm++;
+	}
+	rv1++;
+	}
+	psl = [];
+	psl = nsl;
+	nsl = [];
+	
+}
+
+function drawall () {
+	psl.forEach(draweach);
+}
+
+function draweach (item, index) {
+	rem = item % 3;
+	if (rem == 0) {
+	classvar = "flex-containerthree"
+	} else if (rem == 1) {
+	classvar = "flex-containertwo"
+	} else if (rem == 2) {
+	classvar = "flex-containerone"
+	}
+	var drawn = item.split("ppp");
+	lll = "divc"+index;
+	var div = document.createElement("div");
+	div.id = lll;
+	divc = document.getElementById(lll);      
+	divc.classList.add(classvar);
+	document.getElementById("all").appendChild(div);
+	drawn.forEach(draw);
+}
+
+function draw(item, index) {
+  divw = document.createElement("p");
+  divw.value = item;
+  t = document.createTextNode(item);
+  divw.appendChild(t);
+  document.getElementById(lll).appendChild(divw);
+}
+</script>
+<div id="all">
+</div>
+
+</body>
+</html>

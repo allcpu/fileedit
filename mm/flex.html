@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-containerwords {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #ff8d1e;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+}
+.flex-containerthree {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: DodgerBlue;
+}
+.flex-containertwo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #9ef229;
+}
+.flex-containerone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f04ff0;
+}
+.flex-containerthree > div {
+  background-color: #f1f1f1;
+  width: fit-content;
+  margin: 10px;
+  color: #6028ed;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 10px;
+}
+.flex-containertwo > div {
+  background-color: #f1f1f1;
+  width: fit-content;
+  margin: 10px;
+  color: #6028ed;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+   padding: 10px;
+}
+.flex-containerone > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  color: #6028ed;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 10px;
+}
+.wordsdiv{
+min-width: 33px;
+}
+.key{
+ background-size: cover;
+ background-image: url('key.png');
+ height: 33px;
+ width: 33px;
+}
+.lock{
+ background-size: cover;
+ background-image: url('lock.png');
+ height: 33px;
+ width: 33px;
+}
+.cut{
+ background-size: cover;
+ background-image: url('cut.png');
+ height: 33px;
+ width: 33px;
+}
+.submit{
+ background-size: cover;
+ background-color: red;
+ height: 33px;
+ width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="flex-containerwords">
+
+<div class="grid-container">
+<input id="wr1" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,1)"></button>
+<button class="lock" onclick="do(2,1)"></button>
+<button class="cut" onclick="document.getElementById('wr1').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr2" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,2)"></button>
+<button class="lock" onclick="do(2,2)"></button>
+<button class="cut" onclick="document.getElementById('wr2').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr3" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,3)"></button>
+<button class="lock" onclick="do(2,3)"></button>
+<button class="cut" onclick="document.getElementById('wr3').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr4" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,4)"></button>
+<button class="lock" onclick="do(2,4)"></button>
+<button class="cut" onclick="document.getElementById('wr4').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr5" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,5)"></button>
+<button class="lock" onclick="do(2,5)"></button>
+<button class="cut" onclick="document.getElementById('wr5').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr6" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,6)"></button>
+<button class="lock" onclick="do(2,6)"></button>
+<button class="cut" onclick="document.getElementById('wr6').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr7" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,7)"></button>
+<button class="lock" onclick="do(2,7)"></button>
+<button class="cut" onclick="document.getElementById('wr7').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr8" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,8)"></button>
+<button class="lock" onclick="do(2,8)"></button>
+<button class="cut" onclick="document.getElementById('wr8').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr9" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,9)"></button>
+<button class="lock" onclick="do(2,9)"></button>
+<button class="cut" onclick="document.getElementById('wr9').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr10" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,10)"></button>
+<button class="lock" onclick="do(2,10)"></button>
+<button class="cut" onclick="document.getElementById('wr10').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr11" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,11)"></button>
+<button class="lock" onclick="do(2,11)"></button>
+<button class="cut" onclick="document.getElementById('wr11').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr12" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,12)"></button>
+<button class="lock" onclick="do(2,12)"></button>
+<button class="cut" onclick="document.getElementById('wr12').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr13" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,13)"></button>
+<button class="lock" onclick="do(2,13)"></button>
+<button class="cut" onclick="document.getElementById('wr13').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input id="wr14" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,14)"></button>
+<button class="lock" onclick="do(2,14)"></button>
+<button class="cut" onclick="document.getElementById('wr14').value = '';"></button>
+</div>
+<div class="grid-container">
+<input id="wr15" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,15)"></button>
+<button class="lock" onclick="do(2,15)"></button>
+<button class="cut" onclick="document.getElementById('wr15').value = '';"></button>
+</div>
+<div class="grid-container">
+<input id="wr16" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,16)"></button>
+<button class="lock" onclick="do(2,16)"></button>
+<button class="cut" onclick="document.getElementById('wr16').value = '';"></button>
+</div>
+<div class="grid-container">
+<input id="wr17" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,17)"></button>
+<button class="lock" onclick="do(2,17)"></button>
+<button class="cut" onclick="document.getElementById('wr17').value = '';"></button>
+</div>
+<div class="grid-container">
+<input id="wr18" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,18)"></button>
+<button class="lock" onclick="do(2,18)"></button>
+<button class="cut" onclick="document.getElementById('wr18').value = '';"></button>
+</div>
+<div class="grid-container">
+<input id="wr19" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,19)"></button>
+<button class="lock" onclick="do(2,19)"></button>
+<button class="cut" onclick="document.getElementById('wr19').value = '';"></button>
+</div>
+<div class="grid-container">
+<input id="wr20" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="var lock20 = 1;"></button>
+<button class="lock" onclick="var lock20 = 2;"></button>
+<button class="cut" onclick="document.getElementById('wr20').value = '';"></button>
+</div>
+</div>
+<div>
+<button class="submit" onclick="start()"></button>
+</div>
+<script src="array20k.js" ></script>
+<script>
+var lock1 = 1;
+var lock2 = 1;
+var lock3 = 1;
+var lock4 = 1;
+var lock5 = 1;
+var lock6 = 1;
+var lock7 = 1;
+var lock8 = 1;
+var lock9 = 1;
+var lock10 = 1;
+var lock11 = 1;
+var lock12 = 1;
+var lock13 = 1;
+var lock14 = 1;
+var lock15 = 1;
+var lock16 = 1;
+var lock17 = 1;
+var lock18 = 1;
+var lock19 = 1;
+var lock20 = 1;
+var smm, rv1, tv1, cont1, cont2, rowrow, res, rem, classvar, div, drawn, divc, divw, t;
+var nsl = [];
+var psl = [];
+var row1 = [];
+var row2 = [];
+var row3 = [];
+var row4 = [];
+var row5 = [];
+var row6 = [];
+var row7 = [];
+var row8 = [];
+var row9 = [];
+var row10 = [];
+var row11 = [];
+var row12 = [];
+var row13 = [];
+var row14 = [];
+var row15 = [];
+var row16 = [];
+var row17 = [];
+var row18 = [];
+var row19 = [];
+var row20 = [];
+var row1o1 = [];
+var row1o2 = [];
+var row1o3 = [];
+var row14 = [];
+var row15 = [];
+var row16 = [];
+var row17 = [];
+var row18 = [];
+var row19 = [];
+var row20 = [];
+var row11 = [];
+var row21 = [];
+var row31 = [];
+var row41 = [];
+var row51 = [];
+var row61 = [];
+var row71 = [];
+var row81 = [];
+var row91 = [];
+var row101 = [];
+var row111 = [];
+var row121 = [];
+var row131 = [];
+var row141 = [];
+var row151 = [];
+var row161 = [];
+var row171 = [];
+var row181 = [];
+var row191 = [];
+var row201 = [];
+var row12 = [];
+var row22 = [];
+var row32 = [];
+var row42 = [];
+var row52 = [];
+var row62 = [];
+var row72 = [];
+var row82 = [];
+var row92 = [];
+var row102 = [];
+var row112 = [];
+var row122 = [];
+var row132 = [];
+var row142 = [];
+var row152 = [];
+var row162 = [];
+var row172 = [];
+var row182 = [];
+var row192 = [];
+var row202 = [];
+var row13 = [];
+var row23 = [];
+var row33 = [];
+var row43 = [];
+var row53 = [];
+var row63 = [];
+var row73 = [];
+var row83 = [];
+var row93 = [];
+var row103 = [];
+var row113 = [];
+var row123 = [];
+var row133 = [];
+var row143 = [];
+var row153 = [];
+var row163 = [];
+var row173 = [];
+var row183 = [];
+var row193 = [];
+var row203 = [];
+
+function start () {
+var wd1 = document.getElementById('wr1').value;
+var wd2 = document.getElementById('wr2').value;
+var wd3 = document.getElementById('wr3').value;
+var wd4 = document.getElementById('wr4').value;
+var wd5 = document.getElementById('wr5').value;
+var wd6 = document.getElementById('wr6').value;
+var wd7 = document.getElementById('wr7').value;
+var wd8 = document.getElementById('wr8').value;
+var wd9 = document.getElementById('wr9').value;
+var wd10 = document.getElementById('wr10').value;
+var wd11 = document.getElementById('wr11').value;
+var wd12 = document.getElementById('wr12').value;
+var wd13 = document.getElementById('wr13').value;
+var wd14 = document.getElementById('wr14').value;
+var wd15 = document.getElementById('wr15').value;
+var wd16 = document.getElementById('wr16').value;
+var wd17 = document.getElementById('wr17').value;
+var wd18 = document.getElementById('wr18').value;
+var wd19 = document.getElementById('wr19').value;
+var wd20 = document.getElementById('wr20').value;
+var wtf1o1 = wd1.substring(0, 1);
+var wtf1o2 = wd1.substring(0, 2);
+var wtf1o3 = wd1.substring(0, 3);
+var wtf21 = wd2.substring(0, 1);
+var wtf22 = wd2.substring(0, 2);
+var wtf23 = wd2.substring(0, 3);
+var wtf31 = wd3.substring(0, 1);
+var wtf32 = wd3.substring(0, 2);
+var wtf33 = wd3.substring(0, 3);
+var wtf41 = wd4.substring(0, 1);
+var wtf42 = wd4.substring(0, 2);
+var wtf43 = wd4.substring(0, 3);
+var wtf51 = wd5.substring(0, 1);
+var wtf52 = wd5.substring(0, 2);
+var wtf53 = wd5.substring(0, 3);
+var wtf61 = wd6.substring(0, 1);
+var wtf62 = wd6.substring(0, 2);
+var wtf63 = wd6.substring(0, 3);
+var wtf71 = wd7.substring(0, 1);
+var wtf72 = wd7.substring(0, 2);
+var wtf73 = wd7.substring(0, 3);
+var wtf81 = wd8.substring(0, 1);
+var wtf82 = wd8.substring(0, 2);
+var wtf83 = wd8.substring(0, 3);
+var wtf91 = wd9.substring(0, 1);
+var wtf92 = wd9.substring(0, 2);
+var wtf93 = wd9.substring(0, 3);
+var wtf101 = wd10.substring(0, 1);
+var wtf102 = wd10.substring(0, 2);
+var wtf103 = wd10.substring(0, 3);
+var wtf111 = wd11.substring(0, 1);
+var wtf112 = wd11.substring(0, 2);
+var wtf113 = wd11.substring(0, 3);
+var wtf121 = wd12.substring(0, 1);
+var wtf122 = wd12.substring(0, 2);
+var wtf123 = wd12.substring(0, 3);
+var wtf131 = wd13.substring(0, 1);
+var wtf132 = wd13.substring(0, 2);
+var wtf133 = wd13.substring(0, 3);
+var wtf141 = wd14.substring(0, 1);
+var wtf142 = wd14.substring(0, 2);
+var wtf143 = wd14.substring(0, 3);
+var wtf151 = wd15.substring(0, 1);
+var wtf152 = wd15.substring(0, 2);
+var wtf153 = wd15.substring(0, 3);
+var wtf161 = wd16.substring(0, 1);
+var wtf162 = wd16.substring(0, 2);
+var wtf163 = wd16.substring(0, 3);
+var wtf171 = wd17.substring(0, 1);
+var wtf172 = wd17.substring(0, 2);
+var wtf173 = wd17.substring(0, 3);
+var wtf181 = wd18.substring(0, 1);
+var wtf182 = wd18.substring(0, 2);
+var wtf183 = wd18.substring(0, 3);
+var wtf191 = wd19.substring(0, 1);
+var wtf192 = wd19.substring(0, 2);
+var wtf193 = wd19.substring(0, 3);
+var wtf201 = wd20.substring(0, 1);
+var wtf202 = wd20.substring(0, 2);
+var wtf203 = wd20.substring(0, 3);
+if (lock1 == 1 && emp1 == 1) {
+words.forEach(find1);
+}else if (lock1 == 2 && emp1 == 1) {
+row11[0] = pin1;
+if (lock2 == 1 && emp2 == 1) {
+words.forEach(find2);
+}else if (lock2 == 2 && emp2 == 1) {
+row21[0] = pin2;
+if (lock3 == 1 && emp3 == 1) {
+words.forEach(find3);
+}else if (lock3 == 2 && emp3 == 1) {
+row31[0] = pin3;
+if (lock4 == 1 && emp4 == 1) {
+words.forEach(find4);
+}else if (lock4 == 2 && emp4 == 1) {
+row41[0] = pin4;
+if (lock5 == 1 && emp5 == 1) {
+words.forEach(find5);
+}else if (lock5 == 2 && emp5 == 1) {
+row51[0] = pin5;
+if (lock6 == 1 && emp6 == 1) {
+words.forEach(find6);
+}else if (lock6 == 2 && emp6 == 1) {
+row61[0] = pin6;
+if (lock7 == 1 && emp7 == 1) {
+words.forEach(find7);
+}else if (lock7 == 2 && emp7 == 1) {
+row71[0] = pin7;
+if (lock8 == 1 && emp8 == 1) {
+words.forEach(find8);
+}else if (lock8 == 2 && emp8 == 1) {
+row81[0] = pin8;
+if (lock9 == 1 && emp9 == 1) {
+words.forEach(find9);
+}else if (lock9 == 2 && emp9 == 1) {
+row91[0] = pin9;
+if (lock10 == 1 && emp10 == 1) {
+words.forEach(find10);
+}else if (lock10 == 2 && emp10 == 1) {
+row101[0] = pin10;
+if (lock11 == 1 && emp11 == 1) {
+words.forEach(find11);
+}else if (lock11 == 2 && emp11 == 1) {
+row111[0] = pin11;
+if (lock12 == 1 && emp12 == 1) {
+words.forEach(find12);
+}else if (lock12 == 2 && emp12 == 1) {
+row121[0] = pin12;
+if (lock13 == 1 && emp13 == 1) {
+words.forEach(find13);
+}else if (lock13 == 2 && emp13 == 1) {
+row131[0] = pin13;
+if (lock14 == 1 && emp14 == 1) {
+words.forEach(find14);
+}else if (lock14 == 2 && emp14 == 1) {
+row141[0] = pin14;
+if (lock15 == 1 && emp15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2 && emp15 == 1) {
+row151[0] = pin15;
+if (lock16 == 1 && emp16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2 && emp16 == 1) {
+row161[0] = pin16;
+if (lock17 == 1 && emp17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2 && emp17 == 1) {
+row171[0] = pin17;
+if (lock18 == 1 && emp18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2 && emp18 == 1) {
+row181[0] = pin18;
+if (lock19 == 1 && emp19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2 && emp19 == 1) {
+row191[0] = pin19;
+if (lock20 == 1 && emp20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2 && emp20 == 1) {
+row201[0] = pin20;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+
+function find1 (item, index) {
+    var res1 = item.substring(0, 1);
+    var res2 = item.substring(0, 2);
+    var res3 = item.substring(0, 3);
+    if (wtf1o3 == res3) {
+	row1o3.push(item);
+    } else if (wtf1o2 == res2) {
+	row1o2.push(item);
+	} else if (wtf1o1 == res1) {
+    row1o1.push(item);
+	}
+if (index == 19999) {
+if (lock2 == 1 && emp2 == 1) {
+words.forEach(find2);
+}else if (lock2 == 2 && emp2 == 1) {
+row21[0] = pin2;
+if (lock3 == 1 && emp3 == 1) {
+words.forEach(find3);
+}else if (lock3 == 2 && emp3 == 1) {
+row31[0] = pin3;
+if (lock4 == 1 && emp4 == 1) {
+words.forEach(find4);
+}else if (lock4 == 2 && emp4 == 1) {
+row41[0] = pin4;
+if (lock5 == 1 && emp5 == 1) {
+words.forEach(find5);
+}else if (lock5 == 2 && emp5 == 1) {
+row51[0] = pin5;
+if (lock6 == 1 && emp6 == 1) {
+words.forEach(find6);
+}else if (lock6 == 2 && emp6 == 1) {
+row61[0] = pin6;
+if (lock7 == 1 && emp7 == 1) {
+words.forEach(find7);
+}else if (lock7 == 2 && emp7 == 1) {
+row71[0] = pin7;
+if (lock8 == 1 && emp8 == 1) {
+words.forEach(find8);
+}else if (lock8 == 2 && emp8 == 1) {
+row81[0] = pin8;
+if (lock9 == 1 && emp9 == 1) {
+words.forEach(find9);
+}else if (lock9 == 2 && emp9 == 1) {
+row91[0] = pin9;
+if (lock10 == 1 && emp10 == 1) {
+words.forEach(find10);
+}else if (lock10 == 2 && emp10 == 1) {
+row101[0] = pin10;
+if (lock11 == 1 && emp11 == 1) {
+words.forEach(find11);
+}else if (lock11 == 2 && emp11 == 1) {
+row111[0] = pin11;
+if (lock12 == 1 && emp12 == 1) {
+words.forEach(find12);
+}else if (lock12 == 2 && emp12 == 1) {
+row121[0] = pin12;
+if (lock13 == 1 && emp13 == 1) {
+words.forEach(find13);
+}else if (lock13 == 2 && emp13 == 1) {
+row131[0] = pin13;
+if (lock14 == 1 && emp14 == 1) {
+words.forEach(find14);
+}else if (lock14 == 2 && emp14 == 1) {
+row141[0] = pin14;
+if (lock15 == 1 && emp15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2 && emp15 == 1) {
+row151[0] = pin15;
+if (lock16 == 1 && emp16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2 && emp16 == 1) {
+row161[0] = pin16;
+if (lock17 == 1 && emp17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2 && emp17 == 1) {
+row171[0] = pin17;
+if (lock18 == 1 && emp18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2 && emp18 == 1) {
+row181[0] = pin18;
+if (lock19 == 1 && emp19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2 && emp19 == 1) {
+row191[0] = pin19;
+if (lock20 == 1 && emp20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2 && emp20 == 1) {
+row201[0] = pin20;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+function find2 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf21 == res23) {
+    row23.push(item);
+    } else if (wtf21 == res22) {
+    row22.push(item);
+    } else if (wtf21 == res21) {
+    row21.push(item);
+    }
+if (index == 19999) {
+if (lock3 == 1 && emp3 == 1) {
+words.forEach(find3);
+}else if (lock3 == 2 && emp3 == 1) {
+row31[0] = pin3;
+if (lock4 == 1 && emp4 == 1) {
+words.forEach(find4);
+}else if (lock4 == 2 && emp4 == 1) {
+row41[0] = pin4;
+if (lock5 == 1 && emp5 == 1) {
+words.forEach(find5);
+}else if (lock5 == 2 && emp5 == 1) {
+row51[0] = pin5;
+if (lock6 == 1 && emp6 == 1) {
+words.forEach(find6);
+}else if (lock6 == 2 && emp6 == 1) {
+row61[0] = pin6;
+if (lock7 == 1 && emp7 == 1) {
+words.forEach(find7);
+}else if (lock7 == 2 && emp7 == 1) {
+row71[0] = pin7;
+if (lock8 == 1 && emp8 == 1) {
+words.forEach(find8);
+}else if (lock8 == 2 && emp8 == 1) {
+row81[0] = pin8;
+if (lock9 == 1 && emp9 == 1) {
+words.forEach(find9);
+}else if (lock9 == 2 && emp9 == 1) {
+row91[0] = pin9;
+if (lock10 == 1 && emp10 == 1) {
+words.forEach(find10);
+}else if (lock10 == 2 && emp10 == 1) {
+row101[0] = pin10;
+if (lock11 == 1 && emp11 == 1) {
+words.forEach(find11);
+}else if (lock11 == 2 && emp11 == 1) {
+row111[0] = pin11;
+if (lock12 == 1 && emp12 == 1) {
+words.forEach(find12);
+}else if (lock12 == 2 && emp12 == 1) {
+row121[0] = pin12;
+if (lock13 == 1 && emp13 == 1) {
+words.forEach(find13);
+}else if (lock13 == 2 && emp13 == 1) {
+row131[0] = pin13;
+if (lock14 == 1 && emp14 == 1) {
+words.forEach(find14);
+}else if (lock14 == 2 && emp14 == 1) {
+row141[0] = pin14;
+if (lock15 == 1 && emp15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2 && emp15 == 1) {
+row151[0] = pin15;
+if (lock16 == 1 && emp16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2 && emp16 == 1) {
+row161[0] = pin16;
+if (lock17 == 1 && emp17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2 && emp17 == 1) {
+row171[0] = pin17;
+if (lock18 == 1 && emp18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2 && emp18 == 1) {
+row181[0] = pin18;
+if (lock19 == 1 && emp19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2 && emp19 == 1) {
+row191[0] = pin19;
+if (lock20 == 1 && emp20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2 && emp20 == 1) {
+row201[0] = pin20;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+function find3 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf31 == res33) {
+    row33.push(item);
+    } else if (wtf31 == res32) {
+    row32.push(item);
+    } else if (wtf31 == res31) {
+    row31.push(item);
+    }
+if (index == 19999) {
+if (lock4 == 1 && emp4 == 1) {
+words.forEach(find4);
+}else if (lock4 == 2 && emp4 == 1) {
+row41[0] = pin4;
+if (lock5 == 1 && emp5 == 1) {
+words.forEach(find5);
+}else if (lock5 == 2 && emp5 == 1) {
+row51[0] = pin5;
+if (lock6 == 1 && emp6 == 1) {
+words.forEach(find6);
+}else if (lock6 == 2 && emp6 == 1) {
+row61[0] = pin6;
+if (lock7 == 1 && emp7 == 1) {
+words.forEach(find7);
+}else if (lock7 == 2 && emp7 == 1) {
+row71[0] = pin7;
+if (lock8 == 1 && emp8 == 1) {
+words.forEach(find8);
+}else if (lock8 == 2 && emp8 == 1) {
+row81[0] = pin8;
+if (lock9 == 1 && emp9 == 1) {
+words.forEach(find9);
+}else if (lock9 == 2 && emp9 == 1) {
+row91[0] = pin9;
+if (lock10 == 1 && emp10 == 1) {
+words.forEach(find10);
+}else if (lock10 == 2 && emp10 == 1) {
+row101[0] = pin10;
+if (lock11 == 1 && emp11 == 1) {
+words.forEach(find11);
+}else if (lock11 == 2 && emp11 == 1) {
+row111[0] = pin11;
+if (lock12 == 1 && emp12 == 1) {
+words.forEach(find12);
+}else if (lock12 == 2 && emp12 == 1) {
+row121[0] = pin12;
+if (lock13 == 1 && emp13 == 1) {
+words.forEach(find13);
+}else if (lock13 == 2 && emp13 == 1) {
+row131[0] = pin13;
+if (lock14 == 1 && emp14 == 1) {
+words.forEach(find14);
+}else if (lock14 == 2 && emp14 == 1) {
+row141[0] = pin14;
+if (lock15 == 1 && emp15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2 && emp15 == 1) {
+row151[0] = pin15;
+if (lock16 == 1 && emp16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2 && emp16 == 1) {
+row161[0] = pin16;
+if (lock17 == 1 && emp17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2 && emp17 == 1) {
+row171[0] = pin17;
+if (lock18 == 1 && emp18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2 && emp18 == 1) {
+row181[0] = pin18;
+if (lock19 == 1 && emp19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2 && emp19 == 1) {
+row191[0] = pin19;
+if (lock20 == 1 && emp20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2 && emp20 == 1) {
+row201[0] = pin20;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+function find4 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf41 == res43) {
+    row43.push(item);
+    } else if (wtf41 == res42) {
+    row42.push(item);
+    } else if (wtf41 == res41) {
+    row41.push(item);
+    }
+if (index == 19999) {
+if (lock5 == 1) {
+words.forEach(find5);
+}else if (lock5 == 2) {
+row51[0] = pin5;
+if (lock6 == 1) {
+words.forEach(find6);
+}else if (lock6 == 2) {
+row61[0] = pin5;
+if (lock7 == 1) {
+words.forEach(find7);
+}else if (lock7 == 2) {
+row71[0] = pin5;
+if (lock8 == 1) {
+words.forEach(find8);
+}else if (lock8 == 2) {
+row81[0] = pin5;
+if (lock9 == 1) {
+words.forEach(find9);
+}else if (lock9 == 2) {
+row91[0] = pin5;
+if (lock10 == 1) {
+words.forEach(find10);
+}else if (lock10 == 2) {
+row101[0] = pin5;
+if (lock11 == 1) {
+words.forEach(find11);
+}else if (lock11 == 2) {
+row111[0] = pin5;
+if (lock12 == 1) {
+words.forEach(find12);
+}else if (lock12 == 2) {
+row121[0] = pin5;
+if (lock13 == 1) {
+words.forEach(find13);
+}else if (lock13 == 2) {
+row131[0] = pin5;
+if (lock14 == 1) {
+words.forEach(find14);
+}else if (lock14 == 2) {
+row141[0] = pin5;
+if (lock15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2) {
+row151[0] = pin5;
+if (lock16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2) {
+row161[0] = pin5;
+if (lock17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2) {
+row171[0] = pin5;
+if (lock18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2) {
+row181[0] = pin5;
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin5;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin5;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+function find5 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf51 == res53) {
+    row53.push(item);
+    } else if (wtf51 == res52) {
+    row52.push(item);
+    } else if (wtf51 == res51) {
+    row51.push(item);
+    }
+if (index == 19999) {
+if (lock6 == 1) {
+words.forEach(find6);
+}else if (lock6 == 2) {
+row61[0] = pin6;
+if (lock7 == 1) {
+words.forEach(find7);
+}else if (lock7 == 2) {
+row71[0] = pin6;
+if (lock8 == 1) {
+words.forEach(find8);
+}else if (lock8 == 2) {
+row81[0] = pin6;
+if (lock9 == 1) {
+words.forEach(find9);
+}else if (lock9 == 2) {
+row91[0] = pin6;
+if (lock10 == 1) {
+words.forEach(find10);
+}else if (lock10 == 2) {
+row101[0] = pin6;
+if (lock11 == 1) {
+words.forEach(find11);
+}else if (lock11 == 2) {
+row111[0] = pin6;
+if (lock12 == 1) {
+words.forEach(find12);
+}else if (lock12 == 2) {
+row121[0] = pin6;
+if (lock13 == 1) {
+words.forEach(find13);
+}else if (lock13 == 2) {
+row131[0] = pin6;
+if (lock14 == 1) {
+words.forEach(find14);
+}else if (lock14 == 2) {
+row141[0] = pin6;
+if (lock15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2) {
+row151[0] = pin6;
+if (lock16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2) {
+row161[0] = pin6;
+if (lock17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2) {
+row171[0] = pin6;
+if (lock18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2) {
+row181[0] = pin6;
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin6;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin6;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+function find6 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf61 == res63) {
+    row63.push(item);
+    } else if (wtf61 == res62) {
+    row62.push(item);
+    } else if (wtf61 == res61) {
+    row61.push(item);
+    }
+if (index == 19999) {
+if (lock7 == 1) {
+words.forEach(find7);
+}else if (lock7 == 2) {
+row71[0] = pin7;
+if (lock8 == 1) {
+words.forEach(find8);
+}else if (lock8 == 2) {
+row81[0] = pin7;
+if (lock9 == 1) {
+words.forEach(find9);
+}else if (lock9 == 2) {
+row91[0] = pin7;
+if (lock10 == 1) {
+words.forEach(find10);
+}else if (lock10 == 2) {
+row101[0] = pin7;
+if (lock11 == 1) {
+words.forEach(find11);
+}else if (lock11 == 2) {
+row111[0] = pin7;
+if (lock12 == 1) {
+words.forEach(find12);
+}else if (lock12 == 2) {
+row121[0] = pin7;
+if (lock13 == 1) {
+words.forEach(find13);
+}else if (lock13 == 2) {
+row131[0] = pin7;
+if (lock14 == 1) {
+words.forEach(find14);
+}else if (lock14 == 2) {
+row141[0] = pin7;
+if (lock15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2) {
+row151[0] = pin7;
+if (lock16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2) {
+row161[0] = pin7;
+if (lock17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2) {
+row171[0] = pin7;
+if (lock18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2) {
+row181[0] = pin7;
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin7;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin7;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+function find7 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf71 == res73) {
+    row73.push(item);
+    } else if (wtf71 == res72) {
+    row72.push(item);
+    } else if (wtf71 == res71) {
+    row71.push(item);
+    }
+if (index == 19999) {
+if (lock8 == 1) {
+words.forEach(find8);
+}else if (lock8 == 2) {
+row81[0] = pin8;
+if (lock9 == 1) {
+words.forEach(find9);
+}else if (lock9 == 2) {
+row91[0] = pin8;
+if (lock10 == 1) {
+words.forEach(find10);
+}else if (lock10 == 2) {
+row101[0] = pin8;
+if (lock11 == 1) {
+words.forEach(find11);
+}else if (lock11 == 2) {
+row111[0] = pin8;
+if (lock12 == 1) {
+words.forEach(find12);
+}else if (lock12 == 2) {
+row121[0] = pin8;
+if (lock13 == 1) {
+words.forEach(find13);
+}else if (lock13 == 2) {
+row131[0] = pin8;
+if (lock14 == 1) {
+words.forEach(find14);
+}else if (lock14 == 2) {
+row141[0] = pin8;
+if (lock15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2) {
+row151[0] = pin8;
+if (lock16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2) {
+row161[0] = pin8;
+if (lock17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2) {
+row171[0] = pin8;
+if (lock18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2) {
+row181[0] = pin8;
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin8;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin8;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+function find8 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf81 == res83) {
+    row83.push(item);
+    } else if (wtf81 == res82) {
+    row82.push(item);
+    } else if (wtf81 == res81) {
+    row81.push(item);
+    }
+if (index == 19999) {
+if (lock9 == 1) {
+words.forEach(find9);
+}else if (lock9 == 2) {
+row91[0] = pin9;
+if (lock10 == 1) {
+words.forEach(find10);
+}else if (lock10 == 2) {
+row101[0] = pin9;
+if (lock11 == 1) {
+words.forEach(find11);
+}else if (lock11 == 2) {
+row111[0] = pin9;
+if (lock12 == 1) {
+words.forEach(find12);
+}else if (lock12 == 2) {
+row121[0] = pin9;
+if (lock13 == 1) {
+words.forEach(find13);
+}else if (lock13 == 2) {
+row131[0] = pin9;
+if (lock14 == 1) {
+words.forEach(find14);
+}else if (lock14 == 2) {
+row141[0] = pin9;
+if (lock15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2) {
+row151[0] = pin9;
+if (lock16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2) {
+row161[0] = pin9;
+if (lock17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2) {
+row171[0] = pin9;
+if (lock18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2) {
+row181[0] = pin9;
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin9;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin9;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+function find9 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf91 == res93) {
+    row93.push(item);
+    } else if (wtf91 == res92) {
+    row92.push(item);
+    } else if (wtf91 == res91) {
+    row91.push(item);
+    }
+if (index == 19999) {
+if (lock10 == 1) {
+words.forEach(find10);
+}else if (lock10 == 2) {
+row101[0] = pin10;
+if (lock11 == 1) {
+words.forEach(find11);
+}else if (lock11 == 2) {
+row111[0] = pin10;
+if (lock12 == 1) {
+words.forEach(find12);
+}else if (lock12 == 2) {
+row121[0] = pin10;
+if (lock13 == 1) {
+words.forEach(find13);
+}else if (lock13 == 2) {
+row131[0] = pin10;
+if (lock14 == 1) {
+words.forEach(find14);
+}else if (lock14 == 2) {
+row141[0] = pin10;
+if (lock15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2) {
+row151[0] = pin10;
+if (lock16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2) {
+row161[0] = pin10;
+if (lock17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2) {
+row171[0] = pin10;
+if (lock18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2) {
+row181[0] = pin10;
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin10;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin10;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+function find10 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf101 == res103) {
+    row103.push(item);
+    } else if (wtf101 == res102) {
+    row102.push(item);
+    } else if (wtf101 == res101) {
+    row101.push(item);
+    }
+if (index == 19999) {
+if (lock11 == 1) {
+words.forEach(find11);
+}else if (lock11 == 2) {
+row111[0] = pin11;
+if (lock12 == 1) {
+words.forEach(find12);
+}else if (lock12 == 2) {
+row121[0] = pin11;
+if (lock13 == 1) {
+words.forEach(find13);
+}else if (lock13 == 2) {
+row131[0] = pin11;
+if (lock14 == 1) {
+words.forEach(find14);
+}else if (lock14 == 2) {
+row141[0] = pin11;
+if (lock15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2) {
+row151[0] = pin11;
+if (lock16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2) {
+row161[0] = pin11;
+if (lock17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2) {
+row171[0] = pin11;
+if (lock18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2) {
+row181[0] = pin11;
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin11;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin11;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+function find11 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf111 == res113) {
+    row113.push(item);
+    } else if (wtf111 == res112) {
+    row112.push(item);
+    } else if (wtf111 == res111) {
+    row111.push(item);
+    }
+if (index == 19999) {
+if (lock12 == 1) {
+words.forEach(find12);
+}else if (lock12 == 2) {
+row121[0] = pin12;
+if (lock13 == 1) {
+words.forEach(find13);
+}else if (lock13 == 2) {
+row131[0] = pin12;
+if (lock14 == 1) {
+words.forEach(find14);
+}else if (lock14 == 2) {
+row141[0] = pin12;
+if (lock15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2) {
+row151[0] = pin12;
+if (lock16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2) {
+row161[0] = pin12;
+if (lock17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2) {
+row171[0] = pin12;
+if (lock18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2) {
+row181[0] = pin12;
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin12;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin12;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+function find12 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf121 == res123) {
+    row123.push(item);
+    } else if (wtf121 == res122) {
+    row122.push(item);
+    } else if (wtf121 == res121) {
+    row121.push(item);
+    }
+if (index == 19999) {
+if (lock13 == 1) {
+words.forEach(find13);
+}else if (lock13 == 2) {
+row131[0] = pin13;
+if (lock14 == 1) {
+words.forEach(find14);
+}else if (lock14 == 2) {
+row141[0] = pin13;
+if (lock15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2) {
+row151[0] = pin13;
+if (lock16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2) {
+row161[0] = pin13;
+if (lock17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2) {
+row171[0] = pin13;
+if (lock18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2) {
+row181[0] = pin13;
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin13;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin13;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+function find13 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf131 == res133) {
+    row133.push(item);
+    } else if (wtf131 == res132) {
+    row132.push(item);
+    } else if (wtf131 == res131) {
+    row131.push(item);
+    }
+if (index == 19999) {
+if (lock14 == 1) {
+words.forEach(find14);
+}else if (lock14 == 2) {
+row141[0] = pin14;
+if (lock15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2) {
+row151[0] = pin14;
+if (lock16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2) {
+row161[0] = pin14;
+if (lock17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2) {
+row171[0] = pin14;
+if (lock18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2) {
+row181[0] = pin14;
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin14;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin14;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+function find14 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf141 == res143) {
+    row143.push(item);
+    } else if (wtf141 == res142) {
+    row142.push(item);
+    } else if (wtf141 == res141) {
+    row141.push(item);
+    }
+if (index == 19999) {
+if (lock15 == 1) {
+words.forEach(find15);
+}else if (lock15 == 2) {
+row151[0] = pin15;
+if (lock16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2) {
+row161[0] = pin15;
+if (lock17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2) {
+row171[0] = pin15;
+if (lock18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2) {
+row181[0] = pin15;
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin15;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin15;
+}
+}
+}
+}
+}
+}
+}
+}
+function find15 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf151 == res153) {
+    row153.push(item);
+    } else if (wtf151 == res152) {
+    row152.push(item);
+    } else if (wtf151 == res151) {
+    row151.push(item);
+    }
+if (index == 19999) {
+if (lock16 == 1) {
+words.forEach(find16);
+}else if (lock16 == 2) {
+row161[0] = pin16;
+if (lock17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2) {
+row171[0] = pin16;
+if (lock18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2) {
+row181[0] = pin16;
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin16;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin16;
+}
+}
+}
+}
+}
+}
+}
+function find16 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf161 == res163) {
+    row163.push(item);
+    } else if (wtf161 == res162) {
+    row162.push(item);
+    } else if (wtf161 == res161) {
+    row161.push(item);
+    }
+if (index == 19999) {
+if (lock17 == 1) {
+words.forEach(find17);
+}else if (lock17 == 2) {
+row171[0] = pin17;
+if (lock18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2) {
+row181[0] = pin17;
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin17;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin17;
+}
+}
+}
+}
+}
+}
+function find17 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf171 == res173) {
+    row173.push(item);
+    } else if (wtf171 == res172) {
+    row172.push(item);
+    } else if (wtf171 == res171) {
+    row171.push(item);
+    }
+if (index == 19999) {
+if (lock18 == 1) {
+words.forEach(find18);
+}else if (lock18 == 2) {
+row181[0] = pin18;
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin18;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin18;
+}
+}
+}
+}
+}
+function find18 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf181 == res183) {
+    row183.push(item);
+    } else if (wtf181 == res182) {
+    row182.push(item);
+    } else if (wtf181 == res181) {
+    row181.push(item);
+    }
+if (index == 19999) {
+if (lock19 == 1) {
+words.forEach(find19);
+}else if (lock19 == 2) {
+row191[0] = pin19;
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin19;
+}
+}
+}
+}
+function find19 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf191 == res193) {
+    row193.push(item);
+    } else if (wtf191 == res192) {
+    row192.push(item);
+    } else if (wtf191 == res191) {
+    row191.push(item);
+    }
+if (index == 19999) {
+if (lock20 == 1) {
+words.forEach(find20);
+}else if (lock20 == 2) {
+row201[0] = pin20;
+}
+}
+}
+function find20 (item,index) {
+   var res1 = item.substring(0, 1);
+   var res2 = item.substring(0, 2);
+   var res3 = item.substring(0, 3);
+    if (wtf201 == res203) {
+    row203.push(item);
+    } else if (wtf201 == res202) {
+    row202.push(item);
+    } else if (wtf201 == res201) {
+    row201.push(item);
+    }
+    ligase();
+}
+
+
+
+function ligase() {
+    row1 = [];
+	row2 = []; 
+	row3 = []; 
+	row4 = []; 
+	row5 = []; 
+	row6 = []; 
+	row7 = []; 
+	row8 = []; 
+	row9 = []; 
+	row10 = []; 
+	row11 = []; 
+	row12 = []; 
+	row13 = [];
+	row14 = [];
+	row15 = []; 
+	row16 = []; 
+	row17 = []; 
+	row18 = [];
+	row19 = []; 
+	row20 = [];
+	row1 = row1o1.concat(row1o2,row1o3);
+	row2 = row21.concat(row22,row23); 
+	row3 = row31.concat(row32,row23); 
+	row4 = row41.concat(row42,row23); 
+	row5 = row51.concat(row52,row53); 
+	row6 = row61.concat(row62,row63); 
+	row7 = row71.concat(row72,row73); 
+	row8 = row81.concat(row82,row83); 
+	row9 = row91.concat(row92,row93); 
+	row10 = row101.concat(row102,row103); 
+	row11 = row111.concat(row112,row113); 
+	row12 = row121.concat(row122,row123); 
+	row13 = row131.concat(row132,row133);
+	row14 = row141.concat(row142,row143);
+	row15 = row151.concat(row152,row153); 
+	row16 = row161.concat(row162,row163); 
+	row17 = row171.concat(row172,row173); 
+	row18 = row181.concat(row182,row183);
+	row19 = row191.concat(row192,row193); 
+	row20 = row201.concat(row202,row203);
+	makase();
+}
+
+function removase() {
+	row1 = [];
+	row2 = []; 
+	row3 = []; 
+	row4 = []; 
+	row5 = []; 
+	row6 = []; 
+	row7 = []; 
+	row8 = []; 
+	row9 = []; 
+	row10 = []; 
+	row11 = []; 
+	row12 = []; 
+	row13 = [];
+	row14 = [];
+	row15 = []; 
+	row16 = []; 
+	row17 = []; 
+	row18 = [];
+	row19 = []; 
+	row20 = [];
+    row1o1 = [];
+    row1o2 = [];
+    row1o3 = [];
+    row21 = [];
+    row31 = [];
+    row41 = [];
+    row51 = [];
+    row61 = [];
+    row71 = [];
+    row81 = [];
+    row91 = [];
+    row101 = [];
+    row111 = [];
+    row121 = [];
+    row131 = [];
+    row141 = [];
+    row151 = [];
+    row161 = [];
+    row171 = [];
+    row181 = [];
+    row191 = [];
+    row201 = [];
+    row22 = [];
+    row32 = [];
+    row42 = [];
+    row52 = [];
+    row62 = [];
+    row72 = [];
+    row82 = [];
+    row92 = [];
+    row102 = [];
+    row112 = [];
+    row122 = [];
+    row132 = [];
+    row142 = [];
+    row152 = [];
+    row162 = [];
+    row172 = [];
+    row182 = [];
+    row192 = [];
+    row202 = [];
+    row23 = [];
+    row33 = [];
+    row43 = [];
+    row53 = [];
+    row63 = [];
+    row73 = [];
+    row83 = [];
+    row93 = [];
+    row103 = [];
+    row113 = [];
+    row123 = [];
+    row133 = [];
+    row143 = [];
+    row153 = [];
+    row163 = [];
+    row173 = [];
+    row183 = [];
+    row193 = [];
+    row203 = [];
+}
+
+function rebot () {
+
+}
+
+function makase() {
+    row = 2;
+    while(row<21) {
+	smm = 0;
+	tv1 = 0;
+	rv1 = 0;
+	rowrow = [];
+	cont1 = psl.length;
+	if (row == 2) {
+		row2 = row21.concat(row22,row23); 
+		cont2 = row2.length;
+		rowrow = row2;
+    }else if (row == 3) {
+		cont2 = row3.length;
+		rowrow = row3;
+    }else if (row == 4) {
+		cont2 = row4.length;
+        rowrow = row4;
+    }else if (row == 5) {
+		cont2 = row5.length;
+		rowrow = row5;
+    }else if (row == 6) {
+		cont2 = row6.length;
+		rowrow = row6;
+    }else if (row == 7) {
+		cont2 = row7.length;
+		rowrow = row7;
+    }else if (row == 8) {
+		cont2 = row8.length;
+		rowrow = row8;
+    }else if (row == 9) {
+		cont2 = row9.length;
+		rowrow = row9;
+    }else if (row == 10) {
+		cont2 = row10.length;
+		rowrow = row10;
+    }else if (row == 11) {
+		cont2 = row1o1.length;
+		rowrow = row1o1;
+    }else if (row == 12) {
+		cont2 = row1o2.length;
+		rowrow = row1o2;
+    }else if (row == 13) {
+		cont2 = row1o3.length;
+		rowrow = row1o3;
+    }else if (row == 14) {
+		cont2 = row14.length;
+		rowrow = row14;
+    }else if (row == 15) {
+		cont2 = row15.length;
+		rowrow = row15;
+    }else if (row == 16) {
+		cont2 = row16.length;
+		rowrow = row16;
+    }else if (row == 17) {
+		cont2 = row17.length;
+		rowrow = row17;
+    }else if (row == 18) {
+		cont2 = row18.length;
+		rowrow = row18;
+    }else if (row == 19) {
+		cont2 = row19.length;
+		rowrow = row19;
+    }else if (row == 20) {
+		cont2 = row20.length;
+		rowrow = row20;
+    }
+	while(rv1<cont1) {
+	while(tv1<=cont2) {
+		nsl[smm] = psl[rv1] + "ppp" + rowrow[tv1];
+	tv1++;
+	smm++;
+	}
+	rv1++;
+	}
+	psl = [];
+	psl = nsl;
+	nsl = [];
+	row++;
+	}
+	drawall();
+}
+
+function drawall () {
+	psl.forEach(draweach);
+}
+
+function draweach (item, index) {
+	rem = item % 3;
+	if (rem == 0) {
+	classvar = "flex-containerthree"
+	} else if (rem == 1) {
+	classvar = "flex-containertwo"
+	} else if (rem == 2) {
+	classvar = "flex-containerone"
+	}
+	var drawn = item.split("ppp");
+	lll = "divc"+index;
+	var div = document.createElement("div");
+	div.id = lll;
+	divc = document.getElementById(lll);      
+	divc.classList.add(classvar);
+	document.getElementById("all").appendChild(div);
+	drawn.forEach(draw);
+}
+
+function draw(item, index) {
+  divw = document.createElement("p");
+  divw.value = item;
+  t = document.createTextNode(item);
+  divw.appendChild(t);
+  document.getElementById(lll).appendChild(divw);
+}
+</script>
+<div id="all">
+</div>
+
+</body>
+</html>

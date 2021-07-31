@@ -1,0 +1,135 @@
+
+function find(item, index) {
+	var res1 = item.substring(0, 1);
+	var res2 = item.substring(0, 2);
+	var res3 = item.substring(0, 3);
+	
+	if (wtf3 == res3) {
+	if (built == 1) {
+	row13.push(item);
+    }else if (built == 2) {
+	row23.push(item);
+    }else if (built == 3) {
+	row33.push(item);
+    }else if (built == 4) {
+	row43.push(item);
+    }else if (built == 5) {
+	row53.push(item);
+    }else if (built == 6) {
+	row63.push(item);	
+    }else if (built == 7) {
+	row73.push(item);	
+	}else if (built == 8) {
+	row83.push(item);
+    }else if (built == 9) {
+	row93.push(item);
+    }else if (built == 10) {
+	row103.push(item);
+    }else if (built == 11) {
+	row113.push(item);
+    }else if (built == 12) {
+	row123.push(item);
+    }else if (built == 13) {
+	row133.push(item);
+    }else if (built == 14) {
+	row143.push(item);
+    }else if (built == 15) {
+	row153.push(item);
+    }else if (built == 16) {
+	row163.push(item);	
+    }else if (built == 17) {
+	row173.push(item);	
+	}else if (built == 18) {
+	row183.push(item);
+    }else if (built == 19) {
+	row193.push(item);
+    }else if (built == 20) {
+	row203.push(item);
+    }
+    } else if (wtf2 == res2) {
+	if (built == 1) {
+	row12.push(item);
+    }else if (built == 2) {
+	row22.push(item);
+    }else if (built == 3) {
+	row32.push(item);
+    }else if (built == 4) {
+	row42.push(item);
+    }else if (built == 5) {
+	row52.push(item);
+    }else if (built == 6) {
+	row62.push(item);	
+    }else if (built == 7) {
+	row72.push(item);	
+	}else if (built == 8) {
+	row82.push(item);
+    }else if (built == 9) {
+	row92.push(item);
+    }else if (built == 10) {
+	row102.push(item);
+    }else if (built == 11) {
+	row112.push(item);
+    }else if (built == 12) {
+	row122.push(item);
+    }else if (built == 13) {
+	row132.push(item);
+    }else if (built == 14) {
+	row142.push(item);
+    }else if (built == 15) {
+	row152.push(item);
+    }else if (built == 16) {
+	row162.push(item);	
+    }else if (built == 17) {
+	row172.push(item);	
+	}else if (built == 18) {
+	row182.push(item);
+    }else if (built == 19) {
+	row192.push(item);
+    }else if (built == 20) {
+	row202.push(item);
+    }
+    } else if (wtf1 == res1) {
+	if (built == 1) {
+	row11.push(item);
+    }else if (built == 2) {
+	row21.push(item);
+    }else if (built == 3) {
+	row31.push(item);
+    }else if (built == 4) {
+	row41.push(item);
+    }else if (built == 5) {
+	row51.push(item);
+    }else if (built == 6) {
+	row61.push(item);	
+    }else if (built == 7) {
+	row71.push(item);	
+	}else if (built == 8) {
+	row81.push(item);
+    }else if (built == 9) {
+	row91.push(item);
+    }else if (built == 10) {
+	row101.push(item);
+    }else if (built == 11) {
+	row111.push(item);
+    }else if (built == 12) {
+	row121.push(item);
+    }else if (built == 13) {
+	row131.push(item);
+    }else if (built == 14) {
+	row141.push(item);
+    }else if (built == 15) {
+	row151.push(item);
+    }else if (built == 16) {
+	row161.push(item);	
+    }else if (built == 17) {
+	row171.push(item);	
+	}else if (built == 18) {
+	row181.push(item);
+    }else if (built == 19) {
+	row191.push(item);
+    }else if (built == 20) {
+	row201.push(item);
+    }
+    }
+	
+}
